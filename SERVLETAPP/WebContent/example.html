@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript">
+	function fun1(){
+		document.form1.action="ExampleServlet";
+		document.form1.submit();
+	}
+</script>
+</head>
+<body style="align:center;">
+
+<form name="form1">
+	Select Country: <select name="s1" onchange="fun1()">
+	<option value=" ">---Select---</option>
+	<option value="INDIA">INDIA</option>
+	<option value="US">US</option>
+	<option value="UK">UK</option>
+	<option value="FRANCE">FRANCE</option>
+	</select>
+</form>
+
+
+</body>
+
+
+</html>

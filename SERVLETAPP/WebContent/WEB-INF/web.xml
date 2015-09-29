@@ -1,22 +1,55 @@
-<web-app>
-<servlet>
-<servlet-name>voter</servlet-name>
-<servlet-class>com.naresh.servlet.VoterServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-<servlet-name>voter</servlet-name>
-<url-pattern>/voter</url-pattern>
-</servlet-mapping>
-
-<servlet>
-<servlet-name>lifecycle</servlet-name>
-<servlet-class>com.naresh.servlet.LifeCycleServlet</servlet-class>
-</servlet>
-<servlet-mapping>
-<servlet-name>lifecycle</servlet-name>
-<url-pattern>/lifecycle</url-pattern>
-</servlet-mapping>
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <servlet-name>voter</servlet-name>
+    <servlet-class>com.naresh.servlet.VoterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>voter</servlet-name>
+    <url-pattern>/voter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>lifecycle</servlet-name>
+    <servlet-class>com.naresh.servlet.LifeCycleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>lifecycle</servlet-name>
+    <url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Arithamatic</servlet-name>
+    <servlet-class>com.naresh.servlet.ArithamaticServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Arithamatic</servlet-name>
+    <url-pattern>/ArithamaticServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.naresh.servlet.TestServlet</servlet-class>
+    <init-param>
+      <param-name>driver</param-name>
+      <param-value>oracle.jdbc.OracleDriver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc:oracle:thin:@localhost:1521:XE</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>system</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>system</param-value>
+    </init-param>
+    <init-param>
+      <param-name>command</param-name>
+      <param-value>select * from emp </param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern> /TestServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
