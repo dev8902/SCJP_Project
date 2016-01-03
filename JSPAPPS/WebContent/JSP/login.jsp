@@ -18,8 +18,8 @@ if(username.equalsIgnoreCase("naresh")&&password.equalsIgnoreCase("naresh")){
 
 }%> --%>
 <jsp:useBean id="loginBean" class="com.naresh.jsp.LoginBean">
-<jsp:setProperty name="username" param="username"/>
-<jsp:setProperty name="password" param="password"/>
+<jsp:setProperty name="loginBean" property="username"/>
+<jsp:setProperty name="loginBean" property="password"/>
 </jsp:useBean>
-Username:<jsp:getProperty property="username" name="username"/><br>
-Password:<jsp:getProperty property="" name=""/>
+Username:<jsp:getProperty property="username" name="loginBean"/><br>
+Password:<jsp:getProperty property="password" name="loginBean"/>
